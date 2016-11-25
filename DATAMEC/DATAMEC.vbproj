@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75CFA60F-8140-47D2-9561-7540A844E390}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DATAMEC.My.MyApplication</StartupObject>
+    <RootNamespace>DATAMEC</RootNamespace>
+    <AssemblyName>DATAMEC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>Y:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\brm_nas\PGP\Datamec\</InstallUrl>
+    <MinimumRequiredVersion>1.0.0.13</MinimumRequiredVersion>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DATAMEC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DATAMEC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Data2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0874054520092E0D3D7F2270DE875DB45B235E17</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DATAMEC_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DATAMEC_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actualizacion_Correos.Designer.vb">
+      <DependentUpon>Actualizacion_Correos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacion_Correos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacion_Formulario_VIP.Designer.vb">
+      <DependentUpon>Actualizacion_Formulario_VIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacion_Formulario_VIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_Dilo_Claro.Designer.vb">
+      <DependentUpon>Actualizacion_Monitoreos_Dilo_Claro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_Dilo_Claro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_SAC.Designer.vb">
+      <DependentUpon>Actualizacion_Monitoreos_SAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_SAC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_Soporte.Designer.vb">
+      <DependentUpon>Actualizacion_Monitoreos_Soporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_Soporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_Webcenter.Designer.vb">
+      <DependentUpon>Actualizacion_Monitoreos_Webcenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacion_Monitoreos_Webcenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualización_Monitoreos_TMK.Designer.vb">
+      <DependentUpon>Actualización_Monitoreos_TMK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualización_Monitoreos_TMK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar_Monitoreos_Cartera.Designer.vb">
+      <DependentUpon>Actualizar_Monitoreos_Cartera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizar_Monitoreos_Cartera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar_Monitoreos_Retencion.Designer.vb">
+      <DependentUpon>Actualizar_Monitoreos_Retencion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizar_Monitoreos_Retencion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar_Reevaluaciones.Designer.vb">
+      <DependentUpon>Actualizar_Reevaluaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizar_Reevaluaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Base Personal.Designer.vb">
+      <DependentUpon>Admin Base Personal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Base Personal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cambio_Clave.Designer.vb">
+      <DependentUpon>Cambio_Clave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cambio_Clave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cantidad_Hallazgos.Designer.vb">
+      <DependentUpon>Cantidad_Hallazgos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cantidad_Hallazgos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cantidad_Monitoreos.Designer.vb">
+      <DependentUpon>Cantidad_Monitoreos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cantidad_Monitoreos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado_Correos.Designer.vb">
+      <DependentUpon>Consolidado_Correos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado_Correos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado_Hallazgos.Designer.vb">
+      <DependentUpon>Consolidado_Hallazgos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado_Hallazgos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado_Hallazgos_por_Proceso.Designer.vb">
+      <DependentUpon>Consolidado_Hallazgos_por_Proceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado_Hallazgos_por_Proceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado_Monitoreos.Designer.vb">
+      <DependentUpon>Consolidado_Monitoreos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado_Monitoreos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consolidado_Monitoreos_por_Gestion.Designer.vb">
+      <DependentUpon>Consolidado_Monitoreos_por_Gestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consolidado_Monitoreos_por_Gestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_Indivudual_Productividad.Designer.vb">
+      <DependentUpon>Consulta_Indivudual_Productividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Indivudual_Productividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formato_Correo.Designer.vb">
+      <DependentUpon>Formato_Correo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formato_Correo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Cartera.Designer.vb">
+      <DependentUpon>Formulario_Cartera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Cartera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Dilo_Claro.Designer.vb">
+      <DependentUpon>Formulario_Dilo_Claro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Dilo_Claro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Retencion.Designer.vb">
+      <DependentUpon>Formulario_Retencion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Retencion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_SAC.Designer.vb">
+      <DependentUpon>Formulario_SAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_SAC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Soporte.Designer.vb">
+      <DependentUpon>Formulario_Soporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Soporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_TMK.Designer.vb">
+      <DependentUpon>Formulario_TMK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_TMK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_VIP.Designer.vb">
+      <DependentUpon>Formulario_VIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_VIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Webcenter.Designer.vb">
+      <DependentUpon>Formulario_Webcenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Webcenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="Monitoreos_CGV.Designer.vb">
+      <DependentUpon>Monitoreos_CGV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoreos_CGV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Panel_Principal.Designer.vb">
+      <DependentUpon>Panel_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reevaluaciones.Designer.vb">
+      <DependentUpon>Reevaluaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reevaluaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Actualizacion_Correos.resx">
+      <DependentUpon>Actualizacion_Correos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacion_Formulario_VIP.resx">
+      <DependentUpon>Actualizacion_Formulario_VIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacion_Monitoreos_Dilo_Claro.resx">
+      <DependentUpon>Actualizacion_Monitoreos_Dilo_Claro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacion_Monitoreos_SAC.resx">
+      <DependentUpon>Actualizacion_Monitoreos_SAC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacion_Monitoreos_Soporte.resx">
+      <DependentUpon>Actualizacion_Monitoreos_Soporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizacion_Monitoreos_Webcenter.resx">
+      <DependentUpon>Actualizacion_Monitoreos_Webcenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualización_Monitoreos_TMK.resx">
+      <DependentUpon>Actualización_Monitoreos_TMK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizar_Monitoreos_Cartera.resx">
+      <DependentUpon>Actualizar_Monitoreos_Cartera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizar_Monitoreos_Retencion.resx">
+      <DependentUpon>Actualizar_Monitoreos_Retencion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizar_Reevaluaciones.resx">
+      <DependentUpon>Actualizar_Reevaluaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Base Personal.resx">
+      <DependentUpon>Admin Base Personal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cambio_Clave.resx">
+      <DependentUpon>Cambio_Clave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cantidad_Hallazgos.resx">
+      <DependentUpon>Cantidad_Hallazgos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cantidad_Monitoreos.resx">
+      <DependentUpon>Cantidad_Monitoreos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado_Correos.resx">
+      <DependentUpon>Consolidado_Correos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado_Hallazgos.resx">
+      <DependentUpon>Consolidado_Hallazgos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado_Hallazgos_por_Proceso.resx">
+      <DependentUpon>Consolidado_Hallazgos_por_Proceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado_Monitoreos.resx">
+      <DependentUpon>Consolidado_Monitoreos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consolidado_Monitoreos_por_Gestion.resx">
+      <DependentUpon>Consolidado_Monitoreos_por_Gestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_Indivudual_Productividad.resx">
+      <DependentUpon>Consulta_Indivudual_Productividad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato_Correo.resx">
+      <DependentUpon>Formato_Correo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Cartera.resx">
+      <DependentUpon>Formulario_Cartera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Dilo_Claro.resx">
+      <DependentUpon>Formulario_Dilo_Claro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Retencion.resx">
+      <DependentUpon>Formulario_Retencion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_SAC.resx">
+      <DependentUpon>Formulario_SAC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Soporte.resx">
+      <DependentUpon>Formulario_Soporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_TMK.resx">
+      <DependentUpon>Formulario_TMK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_VIP.resx">
+      <DependentUpon>Formulario_VIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Webcenter.resx">
+      <DependentUpon>Formulario_Webcenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitoreos_CGV.resx">
+      <DependentUpon>Monitoreos_CGV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_Principal.resx">
+      <DependentUpon>Panel_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reevaluaciones.resx">
+      <DependentUpon>Reevaluaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DATAMEC_ClaveTemporal.pfx" />
+    <None Include="DATAMEC_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Claro_Transparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono guardar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audifonos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitorear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data2.ico" />
+    <None Include="Resources\DATA1.png" />
+    <None Include="Resources\DATA.png" />
+    <None Include="Resources\com-android-settings-64.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\Reportar.png" />
+    <None Include="Resources\Monitoring64.png" />
+    <None Include="Resources\_0037_Notepad.png" />
+    <None Include="Resources\note_accept.png" />
+    <None Include="Resources\Books.png" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\412.png" />
+    <None Include="Resources\red_snooker_ball.png" />
+    <None Include="Resources\20110219001327556.png" />
+    <None Include="Resources\vinilo bola promocion 5.png" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\aperture_logo.png" />
+    <None Include="Resources\Facetime_logo.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\1211781923.png" />
+    <None Include="Resources\B - 128.png" />
+    <None Include="Resources\Reportar Casos.png" />
+    <None Include="Resources\1211809828.png" />
+    <None Include="Resources\1211811759.png" />
+    <None Include="Resources\iconexcel.png" />
+    <None Include="Resources\066.png" />
+    <None Include="Resources\email logo1.png" />
+    <None Include="Resources\recycle_bin_trash_full_garbage-128.png" />
+    <None Include="Resources\images %281%29.jpg" />
+    <None Include="Resources\login-button.png" />
+    <Content Include="Sin título-3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="es\Microsoft.VisualBasic.PowerPacks.Vs.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Sin título-3.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
