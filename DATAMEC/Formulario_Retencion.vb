@@ -31,8 +31,13 @@ Public Class Formulario_Retencion
             ComboBox8.Items.Add(dt11.Rows(h).Item("DESCRIPCION"))
         Next
 
-        ComboBox2.Text = "RETENCION"
-        ComboBox3.Text = "NO APLICA"
+        ComboBox2.Items.Clear()
+        ComboBox2.Items.Add("FIDELIZACION")
+        ComboBox2.Items.Add("RETENCION")
+        ComboBox3.Items.Clear()
+        ComboBox3.Items.Add("FIDELIZACION")
+        ComboBox3.Items.Add("NO APLICA")
+
         ComboBox8.Text = "Cancelación del Servicio"
 
     End Sub

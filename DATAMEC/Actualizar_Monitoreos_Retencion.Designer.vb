@@ -360,7 +360,7 @@ Partial Class Actualizar_Monitoreos_Retencion
         '
         Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"NO APLICA"})
+        Me.ComboBox3.Items.AddRange(New Object() {"FIDELIZACION", "NO APLICA"})
         Me.ComboBox3.Location = New System.Drawing.Point(144, 100)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(205, 21)
@@ -370,7 +370,7 @@ Partial Class Actualizar_Monitoreos_Retencion
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"RETENCION"})
+        Me.ComboBox2.Items.AddRange(New Object() {"FIDELIZACION", "RETENCION"})
         Me.ComboBox2.Location = New System.Drawing.Point(144, 73)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(205, 21)

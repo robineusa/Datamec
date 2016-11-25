@@ -358,7 +358,7 @@ Partial Class Actualizacion_Monitoreos_Webcenter
         '
         Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"KEEPER", "BACK REDES SOCIALES ", "OFICINAS VIRTUALES"})
+        Me.ComboBox3.Items.AddRange(New Object() {"REDES SOCIALES", "CLARO TE AYUDA", "OFICINAS VIRTUALES"})
         Me.ComboBox3.Location = New System.Drawing.Point(144, 100)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(205, 21)

@@ -30,6 +30,7 @@ Public Class Formulario_Webcenter
         For h = 0 To dt11.Rows.Count - 1
             ComboBox8.Items.Add(dt11.Rows(h).Item("DESCRIPCION"))
         Next
+
         ComboBox2.Text = "WEBCENTER"
         ComboBox6.Text = "NO APLICA"
     End Sub
