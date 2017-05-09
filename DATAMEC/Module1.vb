@@ -29,7 +29,7 @@
     'Public base As String = Ini_read(archivo, "aplication", "base")
     'Public servidor As String = Ini_read(archivo, "aplication", "Servidor")
 
-    Public coneccion As String = ("data source=ICC-APP1; initial catalog=MEC;user id=Userpgp; password=Pgp2015*")
+    Public coneccion As String = ("data source=172.19.216.4; initial catalog=MEC;user id=Userpgp; password=Pgp2015*")
     'Public coneccion2 As String = ("data source=MXL2180F5D\SQLEXPRESS; initial catalog=CONTROL_CHURN;user id=sa; password=Aseguramiento2013*")
     'Public coneccion As String = ("data source=NEO; initial catalog=MEC;user id=sa; password=Aseguramiento2013*")
     'Public coneccion As String = ("data source=" & servidor & "; initial catalog=" & base & "; Integrated Security=True")
